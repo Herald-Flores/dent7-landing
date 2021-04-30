@@ -1,0 +1,50 @@
+/* Base Styles -------------------- */
+
+// Animation
+//*, *:after, *:before { transition: all .3s ease; }
+
+// Font Smoothing
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;  }
+
+// Paragraphs text color
+// body { color: $black; }
+
+// Bootstrap 4 container fix in mobile
+.container {  box-sizing: border-box; }
+
+
+/**
+ * @section Breakpoints
+ * These values will not show up in content, but can be queried by JavaScript to know which breakpoint is active.
+ * Add or remove as many breakpoints as you like.
+ */
+
+body:before {
+	content: "xs";
+	display: none;
+	visibility: hidden;
+}
+
+@include media-breakpoint-up(sm) {
+	body:before {
+		content: "sm";
+	}
+}
+
+@include media-breakpoint-up(md) {
+	body:before {
+		content: "md";
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	body:before {
+		content: "lg";
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	body:before {
+		content: "xl";
+	}
+}

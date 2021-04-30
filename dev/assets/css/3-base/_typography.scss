@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'ArquitectaW00';
+  src: url('../fonts/ArquitectaW00-Black.woff2') format('woff2'),
+      url('../fonts/ArquitectaW00-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArquitectaW00';
+  src: url('../fonts/ArquitectaW00-Bold.woff2') format('woff2'),
+      url('../fonts/ArquitectaW00-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArquitectaW00-Book';
+  src: url('../fonts/ArquitectaW00-Book.woff2') format('woff2'),
+      url('../fonts/ArquitectaW00-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArquitectaW00';
+  src: url('../fonts/ArquitectaW00-Thin.woff2') format('woff2'),
+      url('../fonts/ArquitectaW00-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+$arquitec: 'ArquitectaW00';
+$OpenSan: 'Open Sans';
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $arquitec;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+}
+
+h1, .h1 { 
+    @include font-size($h1-font-size);
+    font-size: 5rem;
+}
+
+h2, .h2 { @include font-size($h2-font-size); }
+h3, .h3 { @include font-size($h3-font-size); }
+h4, .h4 { @include font-size($h4-font-size); }
+h5, .h5 { @include font-size($h5-font-size); }
+h6, .h6 { @include font-size($h6-font-size); }
