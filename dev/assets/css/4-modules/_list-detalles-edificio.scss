@@ -1,0 +1,101 @@
+.ul-details{
+    list-style: none;
+    padding-left: 0 !important;
+    padding-top: 1.3rem;
+    li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        p{
+            margin-bottom: 0;
+            padding-left: 1.2rem;
+            font-family: $OpenSan;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}
+
+.container-slider{
+    @media screen and (min-width: 1400px){
+        padding-right: 4rem;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+        @include media-breakpoint-up(md){
+            width: 45px;
+            height: 45px;
+        }
+        margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+        border: 1px solid $white;
+        background-color: $white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: 22px;
+        color: $darkGreen;
+        
+    }
+    .swiper-button-next{
+        right: 0;
+        @include media-breakpoint-up(md){
+            right: 1.8rem;
+        }
+        @include media-breakpoint-up(lg){
+            right: 5.8rem;
+            z-index: 10;
+        }
+        &:after{
+            margin-right: -3px;
+        }
+    }
+    .swiper-button-prev{
+        left: 0;
+        @include media-breakpoint-up(lg){
+            left: 9vw;
+        }
+        ::after{
+            margin-left: -3px;
+        }
+    }
+}
+
+.swiper-exclusivo{
+    height: 320px;
+    @include media-breakpoint-up(md){
+        height: 405px;
+    }
+    @include media-breakpoint-up(lg){
+        padding-left: 10vw;
+        height: 465px;
+    }
+    .swiper-slide{
+        height: 100%;
+        max-width: max-content;
+        .card-detaimage{
+            max-width: 100%;
+            height: 100%;
+            @include media-breakpoint-up(md){
+                max-width: 386px;
+            }
+            img{
+                object-fit: cover;
+                height: 100%;
+                min-width: 100%;
+            }
+        }
+    }
+}

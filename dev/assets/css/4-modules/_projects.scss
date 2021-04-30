@@ -1,0 +1,60 @@
+#section-project{
+    background-size: 100%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(lg){
+        background-size: 45%;
+    }
+
+    .card-beneficios-list{
+        background-color: $white;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 0;
+        border: 0;
+        .card-img-top{
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .card-body{
+            padding: 0 !important;
+            .card-title{
+                margin-top: 1.4rem;
+                font-family: $OpenSan;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .card-destacados{
+        background-color: $white;
+        border-radius: 0;
+        border: 0;
+        .card-image-top{
+            border-radius: 0;
+            border: 0;
+            height: 229px;
+            min-width: 100%;
+            object-fit: cover;
+        }
+        .card-body{
+            .card-title{
+                font-family: $arquitec;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: $darkGreen;
+            }
+        }
+    }
+}

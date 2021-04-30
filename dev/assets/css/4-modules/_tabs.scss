@@ -1,0 +1,142 @@
+#tabs-tipologias{
+    background-color: $darkGreen;
+    padding: 1rem .4rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(md){
+        padding: 1rem 3rem;
+    }
+
+    .nav-item{
+        width: 48%;
+        @include media-breakpoint-up(md){
+            width: max-content;
+        }
+        .nav-link{
+            color: $white;
+            border: 0 !important;
+            font-family: $OpenSan;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            padding: .5rem 1.8rem;
+            &.active{
+                color: $golden;
+                background-color: transparent !important;
+                border: 0;
+            }
+        }
+    }
+}
+
+.tab-content{
+    background-color: $white;
+    .text-content{
+        max-width: 341px;
+        margin: 0 auto;
+
+        .image-left{
+            max-width: 244px;
+        }
+    }
+
+    .tab-slider{
+        padding-bottom: 2rem;
+        .slide-image{
+            width: 100%;
+        }
+    }
+
+    .col-slide{
+        .content-slide{
+            display: flex;
+            align-items: center;
+
+            .tab-slider{
+                height: 240px;
+                @include media-breakpoint-up(md){
+                    height: 340px;
+                }
+
+                .swiper-slide{
+                    img{
+                        min-width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    
+        .swiper-button-next, .swiper-button-prev {
+            width: 30px;
+            height: 30px;
+            @include media-breakpoint-up(md){
+                top: 30%;
+            }
+            @include media-breakpoint-up(lg){
+                top: 50%;
+            }
+            margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+            border: 1px solid $darkGreen;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                background-color: $darkGreen;
+                &:after{
+                    color: $white;
+                }
+                
+            }
+        }
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-family: swiper-icons;
+            font-size: 15px;
+            color: $darkGreen;
+            
+        }
+        .swiper-button-next{
+            right: -5px;
+            @include media-breakpoint-up(md){
+                right: 2.5rem;
+            }
+            &:after{
+                margin-right: -3px;
+            }
+        }
+        .swiper-button-prev{
+            left: -10px;
+            @include media-breakpoint-up(md){
+                left: 1.5rem;
+            }
+            ::after{
+                margin-left: -3px;
+            }
+        }
+    }
+}
+
+.details-list{
+    margin-left: 0;
+    padding-left: 1rem;
+    li{
+        font-family: $OpenSan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: .5rem;
+
+        &::marker{
+            color: #FDDC7F;
+            font-size: 20px;
+        }
+    }
+}

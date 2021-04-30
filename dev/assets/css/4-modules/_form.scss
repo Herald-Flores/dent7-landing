@@ -1,15 +1,5 @@
 .form-section{
-    .title{
-        font-family: $arquitec;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 31px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $darkGreen;
-    }
-
+    
     .subtitle{
         font-family: $OpenSan;
         font-style: normal;
@@ -52,17 +42,21 @@
         border-color: $darkGreen !important;
     }
 
-    .btn.btn-third{
-        background: linear-gradient(90deg, #AD830E 0%, #ECB51C 100%);
-        color: $white;
-        font-family: $arquitec;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 0.2em;
-        border-radius: 0 !important;
-        padding: 1rem 1.8rem;
-    }
+    
+}
+
+.btn.btn-third{
+    background: linear-gradient(90deg, #AD830E 0%, #ECB51C 100%);
+    color: $white;
+    font-family: $arquitec;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-radius: 0 !important;
+    padding: 1rem 1.8rem;
+    margin-top: 1rem;
 }
