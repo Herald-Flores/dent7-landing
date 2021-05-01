@@ -8,4 +8,18 @@
             line-height: 25px;
         }
     }
+
+    .list-columns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            width: 46.5%;
+            font-family: $OpenSan;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
 }

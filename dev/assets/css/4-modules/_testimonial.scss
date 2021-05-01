@@ -124,4 +124,21 @@
             }
         }
     }
+
+    &.banner-comercial{
+        .card-banner-bienestar{
+            @include media-breakpoint-up(md){
+                height: 320px !important;
+            }
+            .card-img-overlay{
+                height: 100%;
+    
+                .content{
+                    h5{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }

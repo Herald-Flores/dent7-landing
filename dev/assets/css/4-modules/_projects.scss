@@ -6,13 +6,25 @@
     @include media-breakpoint-up(lg){
         background-size: 45%;
     }
-
+    .text-project{
+        font-family: $OpenSan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        @include media-breakpoint-up(md){
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
     .card-beneficios-list{
         background-color: $white;
         text-align: center;
         padding: 1.5rem;
         border-radius: 0;
         border: 0;
+        box-shadow: 22px 44px 122px rgba(9, 56, 67, 0.15);
         .card-img-top{
             width: 44px;
             height: 44px;
@@ -30,6 +42,14 @@
                 line-height: 25px;
                 text-align: center;
             }
+            .card-text{
+                font-family: $OpenSan;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 0;
+            }
         }
 
     }
@@ -38,6 +58,7 @@
         background-color: $white;
         border-radius: 0;
         border: 0;
+        box-shadow: 22px 44px 122px rgba(9, 56, 67, 0.15);
         .card-image-top{
             border-radius: 0;
             border: 0;
@@ -57,4 +78,8 @@
             }
         }
     }
+}
+
+section{
+    max-width: 100%;
 }

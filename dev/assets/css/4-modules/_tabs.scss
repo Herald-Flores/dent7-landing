@@ -36,6 +36,7 @@
 
 .tab-content{
     background-color: $white;
+    box-shadow: 0px 40px 120px rgba(82, 88, 102, 0.2);
     .text-content{
         max-width: 341px;
         margin: 0 auto;
@@ -53,16 +54,11 @@
     }
 
     .col-slide{
-        @include media-breakpoint-up(md){
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-        }
         .content-slide{
             display: flex;
             align-items: center;
             padding-top: 0 !important;
-
+            height: 100%;
             .tab-slider{
                 height: 240px;
                 @include media-breakpoint-up(md){
@@ -83,7 +79,7 @@
             width: 30px;
             height: 30px;
             @include media-breakpoint-up(md){
-                top: 30%;
+                top: 52%;
             }
             @include media-breakpoint-up(lg){
                 top: 50%;
@@ -145,4 +141,21 @@
             font-size: 20px;
         }
     }
+}
+
+#tipologias-comercial{
+    background-size: 100%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+
+    @include media-breakpoint-up(lg){
+        background-size: 40%;
+    }
+
+    .logo-comercios{
+        height: 95px;
+        margin-bottom: 1rem;
+    }
+
 }
