@@ -1,0 +1,127 @@
+#banner-testimonial{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .user-testimonial{
+        text-align: center;
+        img{
+            border-radius: 50%;
+            border: 19px solid $golden;
+            width: 170px;
+            height: 170px;
+            @include media-breakpoint-down(md){
+                margin-bottom: 2rem;
+            }
+            @include media-breakpoint-up(lg){
+                width: 196px;
+                height: 196px;
+            }
+        }
+    }
+    .content{
+        p{
+            font-family: $OpenSan;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: $textgrey;
+        }
+        h4{
+            font-family: $arquitec;
+            color: $golden;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 31px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+#banner-bienestar{
+    .card-banner-bienestar{
+        border: 0;
+        border-radius: 0;
+        &::before{
+            display: block;
+            height: 100%;
+            width: 100%;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include media-breakpoint-up(md){
+                background: linear-gradient(270deg, #2B5462 45.09%, rgba(43, 84, 98, 0) 77.38%);
+            }
+            @include media-breakpoint-up(lg){
+                background: linear-gradient(270deg, #2B5462 36.09%, rgba(43, 84, 98, 0) 77.38%);
+            }
+            
+        }
+        @include media-breakpoint-up(md){
+            height: 404px;
+        }
+        @include media-breakpoint-up(lg){
+            height: 444px;
+        }
+
+        .card-img{
+            height: 100%;
+            object-fit: cover;
+            @include media-breakpoint-down(sm){
+                height: 250px;
+            }
+        }
+
+        .card-img-overlay{
+            height: 100%;
+            max-width: 450px;
+            @include media-breakpoint-down(sm){
+                position: relative;
+                background-color: $darkGreen;
+            }
+            @include media-breakpoint-up(md){
+                right: 1rem;
+                max-width: 400px;
+            }
+            @include media-breakpoint-up(lg){
+                right: 10vw;
+                max-width: 450px;
+            }
+            left: auto;
+            bottom: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .content{
+                @include media-breakpoint-down(sm){
+                    text-align: left;
+                }
+                @include media-breakpoint-up(md){
+                    text-align: right;
+                }
+                h5{
+                    font-family: $arquitec;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 31px;
+                    text-transform: uppercase;
+                    color: $golden;
+                }
+
+                p{
+                    font-family: $OpenSan;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
