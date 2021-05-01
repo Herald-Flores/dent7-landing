@@ -1,4 +1,14 @@
-
+.logos{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li{
+        margin: 0 1rem;
+        img{
+            height: 56px;
+        }
+    }
+}
 
 
 
