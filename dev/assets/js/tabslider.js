@@ -14,7 +14,12 @@ const swipertabs = () => {
                     breakpointsInverse: true,
                     slidesPerView: 1,
                     spaceBetween: 40,
-
+                    loop: true,
+                    autoplay: {
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    },
+                    speed: 700,
                     // Navigation arrows
                     navigation: {
                         nextEl: '.swipers-tab-btn-next'+index,

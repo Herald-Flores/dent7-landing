@@ -6,6 +6,13 @@ const swiperheroden7 = () => {
         new Swiper('.hero-slider', {
             spaceBetween: 30,
             autoHeight: true,
+            effect: 'fade',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'fraction',

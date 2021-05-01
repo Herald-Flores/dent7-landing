@@ -205,8 +205,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    transition: ease .3s;
                     &:hover{
                         background-color: $white;
+                        transition: ease .3s;
                         &:after{
                             color: $darkGreen;
                         }
